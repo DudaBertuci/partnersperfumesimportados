@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Loja de perfumes importados de marcas renomadas. Perfumes exclusivos e de alta qualidade.">
+    <title>Partners Perfumes Importados</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        /* --- Resetando margens e preenchimento para todos os elementos --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* --- Corpo da página --- */
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #5F0D1B;
+            background-color: #5F0D1B;
+        }
+
+        /* --- Cabeçalho --- */
+        header {
+            background-color: #f5f5f5;
+            padding: 1rem 8rem;
+            color: #5F0D1B;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* margin: 1rem 8rem; */
+        }
+
+        header img{
+            width: 8rem;
+        }
+
+        header .logo h1 {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        header nav ul {
+            display: flex;
+            justify-content: flex-start;
+            list-style: none;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: #5F0D1B;
+            text-decoration: none;
+        }
+
+        header nav ul li .dropdown-menu a {
+            color: #5F0D1B;
+        }
+
+        /* --- Seção Principal --- */
+        #home {
+            background-color: #db5f9b;
+            color: #5F0D1B;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        #home h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        #home p {
+            font-size: 20px;
+        }
+
+        /* --- Seção de Produtos --- */
+        .products {
+            padding: 60px 40px;
+            background-color: #fff;
+        }
+
+        .products h2 {
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .product-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px 
+            
+            
+            (228, 149, 192, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-item:hover {
+            transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+            box-shadow: 0 4px 16px #5F0D1B(0, 0, 0, 0.2); /* Sombra maior ao passar o mouse */
+        }
+
+        .product-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .product-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #5F0D1B;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            font-size: 16px;
+            color: #db5f9b; /* Cor suave de rosa */
+        }
+
+        /* --- Rodapé --- */
+        footer {
+            background-color: #db5f9b;
+            color: #5F0D1B;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* --- Scroll Suave --- */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* --- Botão de Compra Interativo --- */
+        .product-item button {
+            background-color: #db5f9b;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-item button:hover {
+            background-color: #FCEBF1; /* Alteração de cor no hover */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <!-- <h1>Partners Perfumes Importados</h1> -->
+            <a href="index.html"><img src="produtos/logo.png" alt=""></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li style="cursor: pointer">
+                    <div class="dropdown">
+                        <a data-bs-toggle="dropdown" aria-expanded="false">
+                            Produtos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="produtos/pefume_feminino.html">Femininos</a></li>
+                            <li><a href="produtos/perfumes_masculinos.html">Masculino</a></li>
+                            <li><a href="produtos/perfume_arabes.html">Arabe</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Principal -->
+    <section id="home">
+        <div class="intro">
+            <h2>A arte de expressar a sua personalidade</h2>
+            <p>Perfumes importados Originais.</p>
+        </div>
+    </section>
+
+    <!-- Seção de Produtos -->
+    <section id="produtos" class="products">
+        <h2>Os mais procurados</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="imagens/212men.jpg.PNG" alt="Perfume A">
+                <h3 class="product-name">Carolina Herrera 212 Heroes Men Forever Young EDT 90ml para masculino</h3>
+                <p class="product-price">R$ 399,90</p>
+                <a href="https://api.whatsapp.com/send/?phone=5517992056924&text&type=phone_number&app_absent=0" target="_blank">
+                    <button>Mais Informações</button>
+                </a>
+            </div>
+            <div class="product-item">
+                <img src="imagens/RoyalAmber.jpg.webp" alt="Perfume B">
+                <h3 class="product-name">Perfume Orientica Royal Amber Eau De Parfum 100ml For Women</h3>
+                <p class="product-price">R$ 249,90</p>
+                <a href="https://api.whatsapp.com/send/?phone=5517992056924&text&type=phone_number&app_absent=0" target="_blank">
+                    <button>Mais Informações</button>
+                </a>
+            </div>
+            <div class="product-item">
+                <img src="imagens/scandal.jpg.PNG" alt="Perfume C">
+                <h3 class="product-name">perfume jean paul gaultier scandal le parfum feminino eau de parfum intense</h3>
+                <p class="product-price">R$ 249,90</p>
+                <a href="https://api.whatsapp.com/send/?phone=5517992056924&text&type=phone_number&app_absent=0" target="_blank">
+                    <button>Mais Informações</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer id="contato">
+        <p>Telefone: (17) 99205-6924</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        // Efeito de Scroll Suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Efeito interativo no botão "Comprar"
+        document.querySelectorAll('.product-item button').forEach(button => {
+            button.addEventListener('click', function() {
+                alert('Produto adicionado ao carrinho!');
+            });
+        });
+    </script>
+
+</body>
+</html>
